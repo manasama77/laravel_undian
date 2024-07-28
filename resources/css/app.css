@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .btn-primary {
+        @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-0 font-medium rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 disabled:bg-slate-500 disabled:cursor-not-allowed;
+    }
+
+    .btn-warning {
+        @apply focus:outline-none text-white bg-yellow-300 hover:bg-yellow-400 focus:ring-0 font-medium rounded-lg px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 disabled:bg-slate-500 disabled:cursor-not-allowed;
+    }
+
+    .btn-success {
+        @apply focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-0 font-medium rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 disabled:bg-slate-500 disabled:cursor-not-allowed;
+    }
+
+    .btn-dark {
+        @apply text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-0 font-medium rounded-lg  px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 disabled:bg-slate-500 disabled:cursor-not-allowed;
+    }
+
+    .btn-light {
+        @apply text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-0 font-medium rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 disabled:bg-slate-500 disabled:cursor-not-allowed;
+    }
+}
+
+@layer components {
+    .custom-card {
+        @apply w-full min-h-52 bg-white/55 rounded-xl shadow-undian backdrop:blur-sm border border-white py-5 px-4;
+    }
+
+    .winner-card {
+        @apply w-full bg-white/55 rounded-xl shadow-undian backdrop:blur-sm border border-white py-5 px-4;
+    }
+}
+
+body {
+    @apply bg-undian bg-fixed bg-cover antialiased font-poppins;
+}

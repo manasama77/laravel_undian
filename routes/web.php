@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\UndianController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [UndianController::class, 'index'])->name('home');
